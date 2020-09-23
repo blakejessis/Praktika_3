@@ -1,0 +1,31 @@
+public class Blancsuisse extends Dog {
+    double growth;
+    String color;
+    String character;
+    String employment;
+
+
+    @Override
+    String getHair() {
+        return "short";
+    }
+
+    @Override
+    int getAge() {
+        return 1;
+    }
+
+    @Override
+    String getCountry() {
+        return "Swiss";
+    }
+
+    @Override
+    void setCountry() {
+    }
+
+    @Override
+    void setAge(int age) {
+        this.age = age;
+    }
+}
