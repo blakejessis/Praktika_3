@@ -1,5 +1,6 @@
 public class Square extends Rectangle {
     public Square(){
+        length = width;
     }
 
     public Square(double side) {
