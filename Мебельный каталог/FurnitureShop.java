@@ -53,15 +53,15 @@ public class FurnitureShop {
             System.out.println("Ваша покупка: ");
             
             if(price1 != 0) {
-                System.out.println("Стол(ы): " + "Кол-во: " + c1 + " Цена: " + price1);
+                System.out.println("Стул(ья): " + "Кол-во: " + c1 + " Цена: " + price1);
             }
             
             if(price2 != 0) {
-                System.out.println("Шкаф(ы): " + "Кол-во: " + c2 + " Цена: " + price2);
+                System.out.println("Диван(ы): " + "Кол-во: " + c2 + " Цена: " + price2);
             }
             
             if(price3 != 0) {
-                System.out.println("Стул(ья): " + "Кол-во: " + c3 + " Цена: " + price3);
+                System.out.println("Стол(ы): " + "Кол-во: " + c3 + " Цена: " + price3);
             }
         }
             
