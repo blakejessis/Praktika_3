@@ -1,5 +1,4 @@
 public class Square extends Rectangle {
-    private double side;
     public Square(){
     }
 
@@ -11,25 +10,17 @@ public class Square extends Rectangle {
     }
 
     public double getSide(){
-        return side;
+        return width;
     }
 
     public void setSide(double side){
-        this.side = side;
+        this.width = side;
+        this.length = side;
     }
 
-    @Override
-    public void setWidth(double side) {
-        super.setWidth(side);
-    }
-
-    @Override
-    public void setLength(double side) {
-        super.setLength(side);
-    }
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Сторона: " + width;
     }
 }
