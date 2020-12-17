@@ -6,37 +6,49 @@ public class Rectangle extends Shape {
     }
 
     public Rectangle(double width, double length){
+        this.width = width;
+        this.length = length;
     }
 
     public Rectangle(double width, double length, String color, boolean filled){
+        super(color, filled);
+        this.width = width;
+        this.length = length;
     }
 
     public double getWidth() {
-        return 0;
+        return width;
     }
 
     public void setWidth(double width) {
+        this.width = width;
     }
 
     public double getLength() {
-        return 0;
+        return length;
     }
 
     public void setLength(double length) {
+        this.length = length;
     }
 
     @Override
     public double getArea() {
-        return super.getArea();
+        return this.width*this.length;
     }
 
     @Override
     public double getPerimeter() {
-        return super.getPerimeter();
+        return 2*this.width+2*this.length;
     }
 
     @Override
     public String toString() {
-        return super.toString();
+         return "Rectangle{" +
+                "width=" + width +
+                ", length=" + length +
+                ", color='" + color + '\'' +
+                ", filled=" + filled +
+                '}';
     }
 }
