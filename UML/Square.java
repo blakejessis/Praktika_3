@@ -3,10 +3,11 @@ public class Square extends Rectangle {
     }
 
     public Square(double side) {
-        setSide(side);
+        super(side, side);
     }
 
     public Square(double side, String color, boolean filled){
+        super(color, filled, side, side);
     }
 
     public double getSide(){
@@ -18,9 +19,22 @@ public class Square extends Rectangle {
         this.length = side;
     }
 
+ @Override
+    public double getArea() {
+        return this.width * this.length;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return 4*this.width;
+    }
 
     @Override
     public String toString() {
-        return "Сторона: " + width;
+        return "Square{" +
+                "width=" + width +
+                ", color='" + color + '\'' +
+                ", filled=" + filled +
+                '}';
     }
 }
